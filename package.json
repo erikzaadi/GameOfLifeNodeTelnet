@@ -20,5 +20,5 @@
     "mocha" :  "*"
   },
   "author": "Erik Zaadi",
-  "license": "apache"
+  "license": "MIT"
 }
