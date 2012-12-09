@@ -1,0 +1,24 @@
+{
+  "name": "GameOfLifeTelnet",
+  "version": "0.0.1",
+  "description": "See readme",
+  "main": "node_modules/.bin/coffee index.coffee",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --compilers coffee:coffee-script -R spec tests",
+    "watch": "node_modules/.bin/mocha --compilers coffee:coffee-script -w -R min tests",
+    "daemon": "NODE_ENV=production node_modules/.bin/forever start -c node_modules/.bin/coffee index.coffee",
+    "stop": "NODE_ENV=production node_modules/.bin/forever stop 0"
+  },
+  "repository": "https://github.com/erikzaadi/GameOfLifeNodeTelnet",
+  "dependencies" : {
+    "coffee-script"   :  "*",
+    "wez-telnet"    :  "*",
+    "forever"     : "*"
+  },
+  "devDependencies": {
+    "chai" :  "*",
+    "mocha" :  "*"
+  },
+  "author": "Erik Zaadi",
+  "license": "apache"
+}
